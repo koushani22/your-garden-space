@@ -50,7 +50,7 @@
 <div style="position:relative;isolation:isolate;background:#F6F2EC;color:#14110F;"><div aria-hidden="true" style="{{ duskVeil }}"></div>
 <div ref="{{ rootRef }}" data-screen-label="Garden opener" style="position:relative;z-index:2;height:100svh;min-height:480px;overflow:hidden;background:#E6D6C3;font-family:'Jost',sans-serif;">
   <canvas ref="{{ canvasRef }}" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;z-index:1;display:block;cursor:grab;touch-action:pan-y;"></canvas>
-  <div aria-hidden="true" style="position:absolute;left:0;right:0;bottom:0;height:24%;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(20,17,15,0) 0%,rgba(20,17,15,0.18) 100%);"></div>
+  <div aria-hidden="true" style="position:absolute;left:0;right:0;bottom:0;height:14%;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(185,183,232,0) 0%,rgba(185,183,232,0.6) 70%,#B9B7E8 100%);"></div>
   <div aria-hidden="true" style="position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse 120% 90% at 50% 45%,rgba(0,0,0,0) 55%,rgba(30,20,14,0.3) 100%);"></div>
   <div aria-hidden="true" style="position:absolute;inset:0;z-index:9;display:flex;align-items:center;justify-content:center;pointer-events:none;animation:gWelcome 4.2s ease both .5s;"><span style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:26px 40px;border-radius:999px;background:radial-gradient(ellipse at center,rgba(255,255,255,0.28) 0%,rgba(255,255,255,0) 70%);color:#FFFFFF;text-align:center;text-shadow:0 0 18px rgba(255,255,255,0.85),0 0 40px rgba(255,240,220,0.6);">
       <span style="font-family:'Jost',sans-serif;font-weight:400;font-size:11px;letter-spacing:0.5em;padding-left:0.5em;text-transform:uppercase;">✧ Welcome ✧</span>
@@ -94,12 +94,24 @@
 <div aria-hidden="true" style="display:none;"><h1 ref="{{ titleRef }}" style="position:relative;z-index:1;margin:0;display:flex;justify-content:center;align-items:baseline;font-size:clamp(58px,15vw,280px);line-height:0.88;letter-spacing:-0.025em;white-space:nowrap;pointer-events:auto;user-select:none;">
           <span data-l="0" style="display:inline-block;">P</span><span data-l="1" style="display:inline-block;">o</span><span data-l="2" style="display:inline-block;">r</span><span data-l="3" style="display:inline-block;">t</span><span data-l="4" style="display:inline-block;">f</span><span data-l="5" style="display:inline-block;">o</span><span data-l="6" style="display:inline-block;">l</span><span data-l="7" style="display:inline-block;">i</span><span data-l="8" style="display:inline-block;">o</span>
         </h1></div>
-<section data-screen-label="About the garden" style="position:relative;z-index:1;padding:clamp(32px,4vw,56px) clamp(20px,4vw,56px);background:#F6F2EC;color:#322D28;border-top:1px solid rgba(50,45,40,0.1);">
-  <div style="max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:18px;">
-    <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:clamp(30px,3vw,42px);line-height:1.1;">A little room to breathe.</h1>
-    <p style="margin:0;max-width:62ch;font-family:'Jost',sans-serif;font-size:clamp(16px,1.35vw,18px);line-height:1.65;text-wrap:pretty;">A quiet place for whatever’s on your mind. Leave a thought above the water, make a wish in the pond, or explore at your own pace.</p>
-    <p style="margin:0;max-width:90ch;font-family:'Jost',sans-serif;font-size:13px;line-height:1.8;color:#655E56;text-wrap:pretty;">I wanted to create a digital place where taking your time is part of the experience. Through 3D, sound and small, playful interactions, Your Garden Space explores how design can make room for rest, curiosity and expression.</p>
-    <p style="margin:6px 0 0;padding-top:16px;border-top:1px solid rgba(50,45,40,0.12);font-family:'Jost',sans-serif;font-size:11px;line-height:1.65;color:#756E65;">Created by Koushani Datta · Concept, art direction, 3D environment &amp; interaction</p>
+<section data-screen-label="About the garden" style="position:relative;z-index:1;padding:clamp(56px,9vh,110px) clamp(18px,4vw,56px);display:flex;flex-direction:column;gap:clamp(28px,4vh,48px);background:linear-gradient(180deg,#B9B7E8 0%,#D3CFEC 35%,#F6F2EC 100%);color:#14110F;text-align:left;">
+  <div style="display:flex;flex-direction:column;gap:10px;max-width:900px;">
+    <span style="font-family:'Jost',sans-serif;font-size:11px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:#2B2466;">About the garden</span>
+    <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:clamp(56px,8vw,128px);line-height:1;letter-spacing:-0.01em;">Your Garden Space</h1>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:clamp(20px,3vw,44px);font-family:'Jost',sans-serif;">
+    <div style="display:flex;flex-direction:column;gap:10px;padding-top:16px;border-top:1px solid rgba(20,17,15,0.25);">
+      <span style="font-size:10.5px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:#6B625B;">A little room to breathe</span>
+      <p style="margin:0;font-size:15px;line-height:1.7;text-wrap:pretty;">A quiet place for whatever’s on your mind. Leave a thought above the water, make a wish in the pond, or explore at your own pace.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;padding-top:16px;border-top:1px solid rgba(20,17,15,0.25);">
+      <span style="font-size:10.5px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:#6B625B;">Why I made it</span>
+      <p style="margin:0;font-size:13px;line-height:1.8;text-wrap:pretty;">I wanted to create a digital place where taking your time is part of the experience. Through 3D, sound and small, playful interactions, Your Garden Space explores how design can make room for rest, curiosity and expression.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;padding-top:16px;border-top:1px solid rgba(20,17,15,0.25);">
+      <span style="font-size:10.5px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:#6B625B;">Created by</span>
+      <p style="margin:0;font-size:13px;line-height:1.7;text-wrap:pretty;">Koushani Datta · Concept, art direction, 3D environment &amp; interaction</p>
+    </div>
   </div>
 </section>
 </div>
